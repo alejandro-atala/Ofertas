@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mapa de Comercios</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <h1>Mapa de Comercios</h1>
+  <div id="map"><p id="loading-text">Cargando mapa...</p></div>
+
+  <h2 class="product-title">Productos en oferta:</h2>
+  <ul id="productList" class="product-list"></ul>
+  
+
+  <div id="loginForm">
+    <h2>Iniciar sesión</h2>
+    <input type="text" id="username" placeholder="Nombre de usuario" />
+    <br />
+    <input type="password" id="password" placeholder="Contraseña" />
+    <br />
+    <button onclick="login()" >Iniciar sesión</button>
+    <button onclick="window.location.href='registro.html'">Registrarse</button>
+    <button onclick="window.location.href='contacto.html'">Sea parte de nuestra aplicacion</button></div>
+
+
+
+  <div id="addProductForm">
+    <h2>Agregar producto</h2>
+    <input type="text" id="productName" placeholder="Nombre del producto" />
+    <input type="text" id="productPrice" placeholder="Precio" />
+    <button id="addProductButton">Agregar producto</button>
+
+    <label for="showParagraph">Reintegro Cuenta DNI</label>
+    <input type="checkbox" id="showParagraph">
+
+    <!-- <button id="locateButton" onclick="locateMarker()">Ubicar en el mapa</button> -->
+
+    <button id="logoutButton" onclick="logout()">Cerrar sesión</button>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+  <script src="productos.js"></script>
+</body>
+</html>

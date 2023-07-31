@@ -1,0 +1,64 @@
+
+#map {
+  height: 600px;
+  position: relative;
+}
+
+#loading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Estilos para el formulario de inicio de sesión */
+#loginForm {
+  margin-top: 20px;
+}
+
+#loginForm h2 {
+  color: #333;
+}
+
+#loginForm input {
+  margin-bottom: 10px;
+}
+
+#loginForm button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para el formulario de agregar producto */
+#addProductForm {
+  margin-top: 20px;
+  display: none;
+}
+
+#addProductForm h2 {
+  color: #333;
+}
+
+#addProductForm input {
+  margin-bottom: 10px;
+}
+
+#addProductForm button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.product-title,
+.product-list {
+  display: none;
+}
+
+
+
+
+
